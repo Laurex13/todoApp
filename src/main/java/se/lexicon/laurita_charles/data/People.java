@@ -22,6 +22,7 @@ public class People {
         }
         return matchingPersonId[matchingPersonId.length];
     }
+
     public void clear(){
         People.Person = new Person[0];
 

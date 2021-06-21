@@ -3,13 +3,15 @@ package se.lexicon.laurita_charles.data;
 
 public class TodoSequencer {
 
-   private int TodoId;
+    private static int TodoId;
 
-    private TodoSequencer() {
+    private TodoSequencer () {
         TodoId = 0;
     }
 
-    public int nextPersonId(){
-        return ++TodoId;
+    public static int nextTodoId(){
+        return ++ TodoId;
     }
 }
+
+

@@ -11,5 +11,6 @@ public class PersonSequencer {
     public static int nextPersonId(){
     return ++ personId;
     }
+    static void reset(){}
 }
 
