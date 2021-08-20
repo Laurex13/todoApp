@@ -7,7 +7,9 @@ public class PersonSequencer {
     public static int nextPersonId(){
     return  personId++;
     }
-    public static void reset(){
+    public static int reset(){
+        personId = 0;
+        return personId;
 
     }
 }

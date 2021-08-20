@@ -7,7 +7,9 @@ public class TodoSequencer {
     public static int nextTodoId(){
         return todoId ++;
     }
-    public static void reset(){
+    public static int reset(){
+        todoId=0;
+        return  todoId;
 
     }
 }

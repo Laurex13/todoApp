@@ -1,19 +1,10 @@
 package se.lexicon.laurita_charles.model;
 
 public class Person {
-    private final int max = 2021;
 
-    Person(){
-    }
-
-    public static void main(String[] args) {
-    Person maxNumber = new Person();
-
-        System.out.println(maxNumber.max);
-    }
     //Fields
 
-private int personId;
+private  int personId;
 private String firstName;
 private String lastName;
 
