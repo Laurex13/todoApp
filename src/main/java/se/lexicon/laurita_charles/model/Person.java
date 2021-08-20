@@ -4,7 +4,7 @@ public class Person {
 
     //Fields
 
-private  int personId;
+private int personId;
 private String firstName;
 private String lastName;
 
