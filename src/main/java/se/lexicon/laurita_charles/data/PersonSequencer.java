@@ -7,12 +7,12 @@ public class PersonSequencer {
     public static int nextPersonId(){
     return  personId++;
     }
+
     public static int reset(){
         personId = 0;
         return personId;
 
     }
-    static void reset(){}
 }
 
 
