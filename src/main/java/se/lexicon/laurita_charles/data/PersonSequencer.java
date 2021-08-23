@@ -12,6 +12,7 @@ public class PersonSequencer {
         return personId;
 
     }
+    static void reset(){}
 }
 
 
