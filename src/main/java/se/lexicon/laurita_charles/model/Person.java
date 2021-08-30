@@ -4,34 +4,41 @@ public class Person {
 
     //Fields
 
-private int personId;
-private String firstName;
-private String lastName;
+    private int personId;
+    private String firstName;
+    private String lastName;
 
 //Constructors
 
-    public Person(int personId, String firsName, String lastName){
-        this.personId= personId;
-        this.firstName=firsName;
-        this.lastName=lastName;
+    public Person(int personId, String firsName, String lastName) {
+        this.personId = personId;
+        this.firstName = firsName;
+        this.lastName = lastName;
 
     }
 
+   // public Person(String firstName, String lastName){
+     //   setFirstName(firstName);
+      //  setLastName(lastName);
+
+//}
     //Getters and Setters
 
     public int getPersonId(){
 
         return personId;
     }
-    public void setPersonId(int personId){
+    public void setPersonId(int id){
 
-        this.personId=personId;
+        this.personId = personId;
     }
+
     public String getFirstName(){
 
         return firstName;
     }
     public void setFirstName(String firstName){
+
         this.firstName= firstName;
     }
     public String getLastName(){
@@ -41,5 +48,18 @@ private String lastName;
     public void setLastName(String lastName){
 
         this.lastName=lastName;
+
     }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "personId=" + personId +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                '}';
+    }
+
+
+
 }
