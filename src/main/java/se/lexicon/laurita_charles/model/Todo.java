@@ -11,11 +11,11 @@ public class Todo {
     private String description;
     private LocalDate deadline;
     private boolean done;
-    private Person assignee;
+    private int assignee;
     private int assignee_id;
 
     // Constructors
-public Todo(int todoId, String title, String description,LocalDate deadline,boolean done, Person assignee){
+public Todo(int todoId, String title, String description, LocalDate deadline, boolean done, int assignee){
 
     this.todoId = todoId;
     this.title = title;
@@ -29,7 +29,7 @@ public Todo(int todoId, String title, String description,LocalDate deadline,bool
         return todoId;
     }
 
-    public void setTodoId(int TodoId){this.todoId = todoId;}
+    //public void setTodoId(int TodoId){this.todoId = todoId;}
 
     public String getTitle() {
         return title;
@@ -67,7 +67,7 @@ public Todo(int todoId, String title, String description,LocalDate deadline,bool
         return assignee_id;
     }
 
-    public void setAssignee(Person assignee) {
+    public void setAssignee(int assignee) {
         this.assignee = assignee;
     }
 
